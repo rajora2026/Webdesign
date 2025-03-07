@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team India </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        img {
+            height: 350px;
+            width: 200px;
+        }
+
+        .container-wrapper {
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 200px;
+            height: 350px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: gallery 20s linear infinite;
+            cursor: pointer;
+        }
+
+        .container span {
+            position: absolute;
+            transform-origin: center;
+            transform: rotateY(calc(var(--i) * 90deg)) translateZ(300px);
+        }
+
+        @keyframes gallery {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        
+        }
+        @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #4e54c8;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 15s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 68%;
+    width: 171px;
+    height: 171px;
+    bottom: -171px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 57%;
+    width: 155px;
+    height: 155px;
+    bottom: -155px;
+    animation-delay: 3s;
+}
+.background li:nth-child(2) {
+    left: 22%;
+    width: 144px;
+    height: 144px;
+    bottom: -144px;
+    animation-delay: 1s;
+}
+.background li:nth-child(3) {
+    left: 22%;
+    width: 197px;
+    height: 197px;
+    bottom: -197px;
+    animation-delay: 14s;
+}
+.background li:nth-child(4) {
+    left: 14%;
+    width: 116px;
+    height: 116px;
+    bottom: -116px;
+    animation-delay: 14s;
+}
+.background li:nth-child(5) {
+    left: 59%;
+    width: 137px;
+    height: 137px;
+    bottom: -137px;
+    animation-delay: 1s;
+}
+.background li:nth-child(6) {
+    left: 16%;
+    width: 139px;
+    height: 139px;
+    bottom: -139px;
+    animation-delay: 13s;
+}
+.background li:nth-child(7) {
+    left: 53%;
+    width: 234px;
+    height: 234px;
+    bottom: -234px;
+    animation-delay: 10s;
+}
+.background li:nth-child(8) {
+    left: 70%;
+    width: 176px;
+    height: 176px;
+    bottom: -176px;
+    animation-delay: 20s;
+}
+.background li:nth-child(9) {
+    left: 36%;
+    width: 133px;
+    height: 133px;
+    bottom: -133px;
+    animation-delay: 28s;
+}
+.background li:nth-child(10) {
+    left: 36%;
+    width: 190px;
+    height: 190px;
+    bottom: -190px;
+    animation-delay: 43s;
+}
+.background li:nth-child(11) {
+    left: 32%;
+    width: 217px;
+    height: 217px;
+    bottom: -217px;
+    animation-delay: 6s;
+}
+.background li:nth-child(12) {
+    left: 73%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 7s;
+}
+.background li:nth-child(13) {
+    left: 66%;
+    width: 234px;
+    height: 234px;
+    bottom: -234px;
+    animation-delay: 35s;
+}
+.background li:nth-child(14) {
+    left: 41%;
+    width: 216px;
+    height: 216px;
+    bottom: -216px;
+    animation-delay: 14s;
+}
+.background li:nth-child(15) {
+    left: 56%;
+    width: 113px;
+    height: 113px;
+    bottom: -113px;
+    animation-delay: 16s;
+}
+.background li:nth-child(16) {
+    left: 72%;
+    width: 198px;
+    height: 198px;
+    bottom: -198px;
+    animation-delay: 44s;
+}
+.background li:nth-child(17) {
+    left: 73%;
+    width: 258px;
+    height: 258px;
+    bottom: -258px;
+    animation-delay: 84s;
+}
+.background li:nth-child(18) {
+    left: 37%;
+    width: 192px;
+    height: 192px;
+    bottom: -192px;
+    animation-delay: 36s;
+}
+.background li:nth-child(19) {
+    left: 7%;
+    width: 238px;
+    height: 238px;
+    bottom: -238px;
+    animation-delay: 5s;
+}
+.background li:nth-child(20) {
+    left: 71%;
+    width: 205px;
+    height: 205px;
+    bottom: -205px;
+    animation-delay: 97s;
+}
+.background li:nth-child(21) {
+    left: 64%;
+    width: 206px;
+    height: 206px;
+    bottom: -206px;
+    animation-delay: 10s;
+}
+.background li:nth-child(22) {
+    left: 41%;
+    width: 125px;
+    height: 125px;
+    bottom: -125px;
+    animation-delay: 96s;
+}
+.background li:nth-child(23) {
+    left: 34%;
+    width: 226px;
+    height: 226px;
+    bottom: -226px;
+    animation-delay: 80s;
+}
+.background li:nth-child(24) {
+    left: 53%;
+    width: 138px;
+    height: 138px;
+    bottom: -138px;
+    animation-delay: 41s;
+}
+.background li:nth-child(25) {
+    left: 32%;
+    width: 192px;
+    height: 192px;
+    bottom: -192px;
+    animation-delay: 109s;
+}
+.background li:nth-child(26) {
+    left: 44%;
+    width: 220px;
+    height: 220px;
+    bottom: -220px;
+    animation-delay: 67s;
+}
+.background li:nth-child(27) {
+    left: 51%;
+    width: 208px;
+    height: 208px;
+    bottom: -208px;
+    animation-delay: 14s;
+}
+.background li:nth-child(28) {
+    left: 45%;
+    width: 106px;
+    height: 106px;
+    bottom: -106px;
+    animation-delay: 90s;
+}
+.background li:nth-child(29) {
+    left: 18%;
+    width: 117px;
+    height: 117px;
+    bottom: -117px;
+    animation-delay: 40s;
+}
+.background li:nth-child(30) {
+    left: 1%;
+    width: 147px;
+    height: 147px;
+    bottom: -147px;
+    animation-delay: 69s;
+}
+.background li:nth-child(31) {
+    left: 76%;
+    width: 183px;
+    height: 183px;
+    bottom: -183px;
+    animation-delay: 56s;
+}
+.background li:nth-child(32) {
+    left: 48%;
+    width: 176px;
+    height: 176px;
+    bottom: -176px;
+    animation-delay: 23s;
+}
+.background li:nth-child(33) {
+    left: 59%;
+    width: 127px;
+    height: 127px;
+    bottom: -127px;
+    animation-delay: 44s;
+}
+.background li:nth-child(34) {
+    left: 38%;
+    width: 128px;
+    height: 128px;
+    bottom: -128px;
+    animation-delay: 56s;
+}
+.background li:nth-child(35) {
+    left: 70%;
+    width: 155px;
+    height: 155px;
+    bottom: -155px;
+    animation-delay: 18s;
+}
+.background li:nth-child(36) {
+    left: 43%;
+    width: 239px;
+    height: 239px;
+    bottom: -239px;
+    animation-delay: 85s;
+}
+.background li:nth-child(37) {
+    left: 31%;
+    width: 215px;
+    height: 215px;
+    bottom: -215px;
+    animation-delay: 135s;
+}
+.background li:nth-child(38) {
+    left: 37%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 184s;
+}
+.background li:nth-child(39) {
+    left: 81%;
+    width: 223px;
+    height: 223px;
+    bottom: -223px;
+    animation-delay: 62s;
+}
+    </style>
+</head>
+<body>
+    <h1> Welcome </h1>
+    <div>
+        <ul class="background">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+    </div>
+    <div class="container-wrapper">
+        <div class="container">
+            <span style="--i:1"><img src="C:\Users\HP\Downloads\project 2\raj.jpeg" alt="Image 1"></span>
+            <span style="--i:2"><img src="C:\Users\HP\Downloads\project 2\hp.jpg" alt="Image 2"></span>
+            <span style="--i:3"><img src="C:\Users\HP\Downloads\project 2\Rohit-Sharma-2025-02-cd0d7e01bda0207551744f2e527118c7-scaled.jpg" alt="Image 3"></span>
+            <span style="--i:4"><img src="C:\Users\HP\Downloads\project 2\virat-kohli-8.jpg" alt="Image 4"></span>
+        </div>
+    </div>
+    <script>
+        let angle = 0;
+        let autoRotate;
+
+        function startRotation() {
+            autoRotate = setInterval(() => {
+                angle -= 90;
+                document.querySelector('.container').style.transform = `rotateY(${angle}deg)`;
+            }, 3000);
+        }
+
+        function stopRotation() {
+            clearInterval(autoRotate);
+        }
+
+        document.querySelector('.container').addEventListener('click', () => {
+            if (autoRotate) {
+                stopRotation();
+                autoRotate = null;
+            } else {
+                startRotation();
+            }
+        });
+
+        startRotation();
+    </script>
+</body>
+</html>
