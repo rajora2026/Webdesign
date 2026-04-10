@@ -57,21 +57,21 @@ It uses:
 | Branch | Rule |
 |------|------|
 | `main` | PR required + checks |
-| `develop` | PR required |
-| `feature/*` | PR → develop |
-| `hotfix/*` | PR → main |
-| `release/*` | PR → main + develop |
-
+| `deploy` | PR required |
+| `cs-team/*` | PR → devopler |
+| `cyber security-team/*` | PR → cyber security |
+| `test/*` | PR → main + test-1 |
+| `features/*` | PR → main + features|
 ---
 
 ## 🔄 Contribution Workflow
 
 ```bash
 # Clone repo
-git clone https://github.com/your-org/smart-exam.git
+git clone https://github.com/singhrajvardhan/SecureExam-Platform.git
 
 # Go to project
-cd smart-exam
+cd SecureExam-Platform
 
 # Switch branch
 git checkout develop
@@ -110,8 +110,8 @@ git push origin feature/your-feature
 - AI monitoring  
 
 ### 💻 Computer Science Team
-- Backend (Node.js)  
-- Frontend (React)  
+- Backend (python,php,java)  
+- Frontend (html,css,java)  
 - Database  
 - DevOps
 
@@ -134,8 +134,8 @@ git push origin feature/your-feature
 
 | Name | Role | Work | Repo |
 |------|------|------|------|
-| **Rajvardhan** | Developer | F, T, DEV | https://github.com/your-username/rajvardhan-repo |
-| **Autosh** | Developer | F, B | https://github.com/your-username/autosh-repo |
+| **Rajvardhan** | Developer | F, T, DEV | https://github.com/singhrajvardhan |
+| **Autosh** | Developer | F, B | https://github.com/Ashutoshgit47 |
 
 ---
 
@@ -148,9 +148,9 @@ git push origin feature/your-feature
 
 | Layer | Technology |
 |------|------------|
-| Frontend | React + Tailwind |
-| Backend | Node.js + Express |
-| Database | PostgreSQL + Redis |
+| Frontend | html + css + js |
+| Backend | java + php + python |
+| Database | PostgreSQL  |
 | AI | OpenCV + TensorFlow |
 | Auth | JWT |
 | Real-time | Socket.io |
@@ -179,7 +179,7 @@ smart-exam/
 - Node.js  
 - Python  
 - PostgreSQL  
-- Redis  
+- php  
 
 ### Install
 
