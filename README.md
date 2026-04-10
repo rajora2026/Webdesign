@@ -113,7 +113,32 @@ git push origin feature/your-feature
 - Backend (Node.js)  
 - Frontend (React)  
 - Database  
-- DevOps  
+- DevOps
+
+  ## 📌 Role Definitions
+
+| Code | Meaning |
+|------|--------|
+| **F** | Frontend |
+| **B** | Backend |
+| **DB** | Database |
+| **DEV** | DevOps |
+| **T** | Testing |
+
+---
+
+
+## 👥 Team Members
+
+### 💻 Computer Science Team
+
+| Name | Role | Work | Repo |
+|------|------|------|------|
+| **Rajvardhan** | Developer | F, T, DEV | https://github.com/your-username/rajvardhan-repo |
+| **Autosh** | Developer | F, B | https://github.com/your-username/autosh-repo |
+
+---
+
 
 👨‍💻 Total: **20 Members**
 
