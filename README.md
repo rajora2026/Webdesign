@@ -221,7 +221,7 @@ REDIS_URL=your_redis
 
 ## 📄 License
 
-MIT License © 2025 SmartExam Team
+MIT License © 2026 SmartExam Team
 
 ---
 
